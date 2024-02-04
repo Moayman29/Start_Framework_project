@@ -1,0 +1,51 @@
+<div class="portfolio-section">
+    <h2>PORTFOLIO COMPONENT</h2>
+    <div class="shapes">
+        <span></span>
+        <i class="fa-solid fa-star"></i>
+        <span></span>
+    </div>
+    <div class="cards">
+        <div (click)="display(0)" class="pic">
+            <img  src="../assets/poert1.png" alt="poert1">
+            <div class="fade">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div (click)="display(1)" class="pic">
+            <img   src="../assets/port2.png" alt="poert2">
+            <div class="fade">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div (click)="display(2)" class="pic">
+            <img (click)="i=2"  src="../assets/port3.png" alt="poert3">
+            <div class="fade">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div (click)="display(0)" class="pic">
+            <img (click)="i=0"  src="../assets/poert1.png" alt="poert1">
+            <div class="fade">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div (click)="display(1)" class="pic">
+            <img (click)="i=1"  src="../assets/port2.png" alt="poert2">
+            <div class="fade">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <div (click)="display(2)" class="pic">
+            <img src="../assets/port3.png" alt="poert3">
+            <div class="fade">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="appear == true" class="screen-overlay" (click)="appear=false">
+    <div class="overlay-image">
+        <img src={{x}} alt="image">
+    </div>
+</div>

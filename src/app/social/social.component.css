@@ -1,0 +1,40 @@
+.social-section{
+    background-color: #2C3E50;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    grid-template-rows: 1fr;
+    grid-column-gap: 15%;
+    margin: 0 auto ;
+}
+
+.features {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+}
+
+.icons{
+    margin-top: 5px;
+}
+
+.icons i{
+    border: solid 1px white;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 10px;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    top: 0;
+}

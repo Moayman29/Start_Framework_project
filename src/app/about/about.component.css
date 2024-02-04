@@ -1,0 +1,46 @@
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 180px 100px;
+    background-color: #1ABC9C;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-top: 30px;
+}
+
+.shapes{
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: 15px 0;
+}
+
+.shapes span{
+    width: 30%;
+    border-width: 5px 0 0;
+    border-style: solid;
+    border-color: white;
+    margin-top: 5px;
+}
+
+.shapes i{
+    color: white;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 80px;
+    color: white;
+}
+
+.info div{
+    max-width: 750px;
+    margin: 0 10px;
+}

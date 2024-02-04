@@ -1,0 +1,106 @@
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 100px 20px;
+    margin-top: 75px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #2C3E50;
+}
+
+.shapes {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: 15px 0 10px;
+}
+
+.shapes span {
+    width: 30%;
+    border-width: 5px 0 0;
+    border-style: solid;
+    border-color: #2C3E50;
+    margin-top: 5px;
+}
+
+.shapes i {
+    color: #2C3E50;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 2;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin: 10px 0;
+}
+
+.cards img {
+    width: 400px;
+    border-radius: 2%;
+}
+
+.cards .fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #1ABC9C;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+.cards .fade i {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.cards .pic {
+    position: relative;
+}
+
+.pic:hover img {
+    opacity: 0.3;
+
+}
+
+.pic:hover .fade {
+    opacity: 0.7;
+}
+
+.screen-overlay{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: rgba(13, 110, 253, 0.2);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.overlay-image img{
+    position: relative;
+    width: 600px;
+}

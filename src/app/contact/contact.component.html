@@ -1,0 +1,28 @@
+<div class="contact-section" >
+    <h2>CONTACT SECTION</h2>
+    <div class="shapes">
+        <span></span>
+        <i class="fa-solid fa-star"></i>
+        <span></span>
+    </div >
+    <div class="form">
+        <div class="input-box" id="name-box">
+         <label for="user_name" [ngClass] = " name == '' ? 'label-off' : 'label-on' " >userName:</label>
+         <input type="text" #user_name (keyup)="getName(user_name.value)" placeholder="userName">
+        </div>
+        <div class="input-box" id="age-box">
+         <label for="user_age" [ngClass] = " age == '' ? 'label-off' : 'label-on' ">userAge:</label>
+         <input type="text" #user_age (keyup)="getAge(user_age.value)" placeholder="userAge">
+        </div>
+        <div class="input-box" id="email-box">
+         <label for="user_email" [ngClass] = " email == '' ? 'label-off' : 'label-on' ">userEmail:</label>
+         <input type="text" #user_email (keyup)="getEmail(user_email.value)" placeholder="userEmail">
+        </div>
+        <div class="input-box" id="password-box">
+         <label for="user_password" [ngClass] = " password == '' ? 'label-off' : 'label-on' ">userPassword:</label>
+         <input type="text" #user_password (keyup)="getPassword(user_password.value)" placeholder="userPassword">
+        </div>
+        
+        <input type="submit" value="send Message">
+    </div>      
+</div>

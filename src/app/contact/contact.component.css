@@ -1,0 +1,83 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 100px;
+    margin-top: 105px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #2C3E50;
+}
+
+.shapes {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: 15px 0 70px;
+}
+
+.shapes span {
+    width: 30%;
+    border-width: 5px 0 0;
+    border-style: solid;
+    border-color: #2C3E50;
+    margin-top: 5px;
+}
+
+.shapes i {
+    color: #2C3E50;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 725px;
+    margin-bottom: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 0 0 1px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+input[type=submit] {
+    width: fit-content;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border-style: hidden;
+    background-color: #1ABC9C;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.input-box{
+    position: relative;
+}
+
+.label-off {
+    color: #1ABC9C;
+    position: relative;
+    bottom: -45px;
+    z-index: -1;
+    transition: 0.6s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.label-on {
+    color: #1ABC9C;
+    position: relative;
+    bottom: 0px;
+    z-index: -1;
+    transition: 0.6s cubic-bezier(0.61, 1, 0.88, 1);
+}

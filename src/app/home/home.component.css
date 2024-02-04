@@ -1,0 +1,45 @@
+.home-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1ABC9C;
+    padding-top: 85px;
+    padding-bottom: 90px;
+    margin-top: 75px;
+}
+
+.home-section img {
+    width: 250px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+.shapes {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: 15px 0;
+}
+
+.shapes span {
+    width: 32%;
+    border-width: 5px 0 0;
+    border-style: solid;
+    border-color: white;
+    margin-top: 5px;
+}
+
+.shapes i {
+    color: white;
+}
+
+.info {
+    color: white;
+}
